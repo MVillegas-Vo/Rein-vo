@@ -1,16 +1,51 @@
-# React + Vite
+Caneca Inteligente Clasificadora de Residuos
+Integrantes del Equipo
+Estudiante A - Grado 11-1
+Estudiante B - Grado 11-1
+Descripción General
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Proyecto tecnológico enfocado en el desarrollo de una caneca inteligente capaz de identificar y clasificar automáticamente diferentes tipos de residuos mediante visión artificial e inteligencia artificial.
 
-Currently, two official plugins are available:
+El sistema utiliza una ESP32-S3 CAM junto con una cámara OV2640 para capturar imágenes de los residuos. Estas imágenes son procesadas mediante un modelo de inteligencia artificial desarrollado en Edge Impulse, permitiendo identificar el tipo de residuo y determinar el contenedor correspondiente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La caneca cuenta con un sistema Pan-Tilt que permite controlar el movimiento para dirigir y depositar el residuo en uno de los tres contenedores disponibles.
 
-## React Compiler
+Problema Identificado
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+La separación incorrecta de los residuos dificulta su aprovechamiento y aumenta la cantidad de materiales que terminan mezclados en un mismo recipiente.
 
-## Expanding the Oxlint configuration
+En el entorno escolar, la clasificación de residuos depende principalmente de la intervención manual, lo que puede generar errores durante la separación. Por esta razón, se propone una solución automatizada que facilite la identificación y clasificación de los residuos.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Objetivo General
+
+Desarrollar una caneca inteligente capaz de identificar diferentes tipos de residuos mediante visión artificial y clasificarlos automáticamente utilizando un sistema Pan-Tilt, con el propósito de mejorar la separación y disposición de los residuos en el entorno escolar.
+
+Tecnologías Utilizadas
+ESP32-S3 CAM
+Cámara OV2640
+Edge Impulse
+C/C++
+Arduino IDE
+Git y GitHub
+Componentes Principales
+ESP32-S3 CAM
+Cámara OV2640
+Sistema Pan-Tilt
+Tres contenedores para residuos
+Servomotores
+Fuente de alimentación
+Cargador
+Estructura mecánica
+Funcionamiento del Sistema
+
+El usuario deposita un residuo en la caneca. La ESP32-S3 CAM captura una imagen mediante la cámara OV2640 y el modelo de inteligencia artificial desarrollado en Edge Impulse analiza el objeto para determinar su clasificación.
+
+Una vez identificado el residuo, el sistema controla el mecanismo Pan-Tilt para posicionarlo correctamente y depositarlo en el contenedor correspondiente. De esta manera, el proceso de separación se realiza de forma automatizada.
+
+Estado del Proyecto
+
+Fase 1: Diseño, estructuración y desarrollo inicial del sistema de clasificación automática de residuos. Se encuentra en proceso la integración de la ESP32-S3 CAM, el modelo de inteligencia artificial desarrollado con Edge Impulse, el sistema Pan-Tilt y los tres contenedores.
+
+Autores
+
+Proyecto desarrollado por estudiantes de Grado 11 con fines académicos y educativos, orientado a la implementación de tecnologías de inteligencia artificial y automatización para mejorar la gestión de residuos en el entorno escolar.
