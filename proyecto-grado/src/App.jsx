@@ -53,11 +53,30 @@ export default function App() {
       <main>
         <Presentacion />
         <Objetivos />
+      <SolucionTecnica/>
         <Integrantes />
       </main>
       <footer className="footer-box">
         <p>2026 - Proyecto de Grado Undécimo</p>
       </footer>
     </div>
+  );
+}
+
+function SolucionTecnica() {
+  return (
+    <section className="card-box">
+      <h3>Solución Técnica</h3>
+      <p>
+        Para resolver este problema, implementaremos una red de sensores de temperatura y 
+        humedad conectados a un microcontrolador con Wi-Fi, los cuales enviarán los datos 
+        en tiempo real a este portal web para su visualización.
+      </p>
+      <ul>
+        <li>Sensor de temperatura y humedad ambiental</li>
+        <li>Microcontrolador con conectividad a red</li>
+        <li>Interfaz web en React para lectura de datos</li>
+      </ul>
+    </section>
   );
 }
